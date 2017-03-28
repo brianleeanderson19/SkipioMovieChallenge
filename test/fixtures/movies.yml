@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  genre: MyText
+  actors: MyText
+  rating: MyText
+
+two:
+  title: MyString
+  genre: MyText
+  actors: MyText
+  rating: MyText
