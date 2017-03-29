@@ -6,8 +6,18 @@ body {
   background-color: darkred;
 }
 
-tr {
+tr.theads {
   color: white;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  color: white;
+}
+
+th {
+  text-align: center;
 }
 
 .show {
@@ -82,4 +92,8 @@ img {
   padding: 5px;
   margin-top: 15px;
   text-align: center;
+}
+
+input, select, textarea{
+    color: black;
 }
