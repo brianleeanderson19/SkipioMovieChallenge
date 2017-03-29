@@ -12,14 +12,18 @@ tr.theads {
 }
 
 td {
+  padding: 10px 15px;
   text-align: center;
   color: white;
 }
 
 th {
+  text-decoration: underline;
+  display: all;
   padding: 20px;
   text-align: center;
   color: white;
+  font-size: 30px;
 }
 
 .show {
@@ -61,7 +65,7 @@ h1 {
 }
 
 .container {
-  background-color: rgba(35, 40, 48, .9)
+  background-color: rgba(30, 33, 38, .9)
 }
 
 .card {
@@ -101,10 +105,11 @@ input, select, textarea{
 }
 
 table {
-  border-collapse: initial;
+  border-collapse: collapse;
+  display: block;
 }
 
-td {
-  border-bottom: 1px solid #cecfd5;
-  padding: 10px 15px;
+.movietitle {
+  font-size: 15px;
+  font-weight: bold;
 }

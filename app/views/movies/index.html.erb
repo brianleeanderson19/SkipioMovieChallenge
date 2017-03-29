@@ -6,7 +6,7 @@
       <thead>
       <div class="theads">
         <tr>
-          <th scope="col">Title</th>
+          <th scope="col" colspan="2" style="text-align: right">Title</th>
           <th scope="col">Genre</th>
           <th scope="col">Actors</th>
           <th scope="col">Rating</th>
@@ -19,7 +19,7 @@
       <% @movies.each do |movie| %>
         <tr>
           <td scope="col"><%= image_tag movie.image.url(:medium) %></td>
-          <td scope="col"><%= movie.title %></td>
+          <td class="movietitle"><%= movie.title %></td>
           <td scope="col"><%= movie.genre %></td>
           <td scope="col"><%= movie.actors %></td>
           <td scope="col"><%= movie.rating %></td>
