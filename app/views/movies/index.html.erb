@@ -1,32 +1,35 @@
 <h1>Movies</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Genre</th>
-      <th>Actors</th>
-      <th>Rating</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="container">
+  <table>
+    <div class="tablehead">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Actors</th>
+          <th>Rating</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+    </div>
 
-  <tbody>
-    <% @movies.each do |movie| %>
-      <tr>
-        <td><%= image_tag movie.image.url(:medium) %></td>
-        <td><%= movie.title %></td>
-        <td><%= movie.genre %></td>
-        <td><%= movie.actors %></td>
-        <td><%= movie.rating %></td>
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-        <td><%= link_to 'Delete', movie, method: :delete, data: { confirm: 'Are you sure you want to delete this movie?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+    <tbody>
+      <% @movies.each do |movie| %>
+        <tr>
+          <td><%= image_tag movie.image.url(:medium) %></td>
+          <td><%= movie.title %></td>
+          <td><%= movie.genre %></td>
+          <td><%= movie.actors %></td>
+          <td><%= movie.rating %></td>
+          <td><%= link_to 'Show', movie %></td>
+          <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+          <td><%= link_to 'Delete', movie, method: :delete, data: { confirm: 'Are you sure you want to delete this movie?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 <br>
-<button type="button" class="btn btn-primary">Primary</button>
-<%= link_to 'Enter A New Movie', new_movie_path %>
+<%= link_to 'Enter A New Movie', new_movie_path, class: "btn btn-lg btn-primary" %>
+

@@ -1,42 +1,48 @@
-<%= form_for @movie, html: { multipart: true } do |f| %>
-  <% if movie.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+<div class="newmovie">
+  <div class="card">
+    <div class="card-block">
+      <%= form_for @movie, html: { multipart: true } do |f| %>
+        <% if movie.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
 
-      <ul>
-      <% movie.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+            <ul>
+            <% movie.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="field">
+          <%= f.label :title %>
+          <%= f.text_field :title %>
+        </div>
+
+        <div class="field">
+          <%= f.label :genre %>
+          <%= f.text_area :genre %>
+        </div>
+
+        <div class="field">
+          <%= f.label :actors %>
+          <%= f.text_area :actors %>
+        </div>
+
+        <div class="field">
+          <%= f.label :rating %>
+          <%= f.text_area :rating %>
+        </div>
+
+        <div class="field">
+          <%= f.label :image %>
+          <%= f.file_field :image %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit %>
+        </div>
       <% end %>
-      </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
   </div>
-
-  <div class="field">
-    <%= f.label :genre %>
-    <%= f.text_area :genre %>
-  </div>
-
-  <div class="field">
-    <%= f.label :actors %>
-    <%= f.text_area :actors %>
-  </div>
-
-  <div class="field">
-    <%= f.label :rating %>
-    <%= f.text_area :rating %>
-  </div>
-
-  <div class="field">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

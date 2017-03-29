@@ -12,3 +12,51 @@ tr {
 .show {
   color: white;
 }
+
+.btn-primary {
+  display: block;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #0275d8;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.tablehead {
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(35, 40, 48, .9)
+}
+
+.card {
+  padding: 20px;
+  opacity: .9;
+  background-color: #232326;
+  border-radius: .5rem;
+}
+
+.newmovie > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+  border-radius: .5rem;
+}
+
+.card-block {
+  color: white;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
