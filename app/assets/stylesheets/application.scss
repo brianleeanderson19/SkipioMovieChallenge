@@ -14,12 +14,22 @@ tr {
   color: white;
 }
 
+.editbutts {
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn-primary {
   display: block;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #0275d8;
   cursor: pointer;
   border: none;
+}
+
+a.btn {
+  margin: 5px;
 }
 
 a {
@@ -65,4 +75,11 @@ h1 {
 
 img {
   margin: 15px;
+}
+
+.actions {
+  color: black;
+  padding: 5px;
+  margin-top: 15px;
+  text-align: center;
 }
