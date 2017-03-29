@@ -17,7 +17,9 @@ td {
 }
 
 th {
+  padding: 20px;
   text-align: center;
+  color: white;
 }
 
 .show {
@@ -96,4 +98,13 @@ img {
 
 input, select, textarea{
     color: black;
+}
+
+table {
+  border-collapse: initial;
+}
+
+td {
+  border-bottom: 1px solid #cecfd5;
+  padding: 10px 15px;
 }
