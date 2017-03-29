@@ -2,6 +2,7 @@
 @import "bootstrap";
 
 body {
+  font-family: 'Revalia', cursive;
   background-color: darkred;
 }
 
@@ -25,6 +26,7 @@ a {
   display: block;
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 h1 {
@@ -48,7 +50,7 @@ h1 {
 }
 
 .newmovie > .card {
-  width: 22rem;
+  width: 30rem;
   margin: 0 auto;
   float: none;
   border-radius: .5rem;
@@ -59,4 +61,8 @@ h1 {
   text-align: left;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+img {
+  margin: 15px;
 }
